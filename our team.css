@@ -1,0 +1,279 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+display: flex;
+justify-content: center;
+align-content: center;
+min-height: 100vh;
+}
+.container{
+position: relative;
+width: 100%;
+max-width: 10000x;
+min-height: 1000px;
+background: #fff;
+ margin: 50px;
+ display: flex;
+ grid-template-columns: repeat(1,1fr);
+ box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+ border-radius: 30px;
+}
+.container .leftside{
+position: relative;
+background: #003147;
+padding: 40px;
+border-top-left-radius: 30px;
+border-bottom-left-radius: 30px;
+}
+.profoletext{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profoletext .imgbox{
+position: relative;
+width: 200px ;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+}
+.profoletext .imgbox img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.profoletext h2{
+color: #fff;
+font-size: 1.5em;
+margin-top: 20px;
+text-transform: uppercase;
+text-align: center;
+font-weight: 600;
+line-height: 1.4em; 
+}
+.profoletext h2 span{
+font-size: 0.8em;
+font-weight: 300 ;
+}
+.contactinfo{
+padding-top: 40px;
+}
+.title{
+color: #fff;
+text-transform: uppercase ;
+font-weight: 600;
+letter-spacing: 1px;
+margin-bottom: 20px; 
+}
+.contactinfo ul{
+    position: relative;
+}
+.contactinfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.contactinfo ul li .icon{
+display: inline-block;
+width: 30px;
+font-size: 18px;
+color: #03a9f4;
+}
+.contactinfo ul li span{
+color: #fff;
+font-weight: 300; 
+}
+.contactinfoeducation li{
+margin-bottom: 20px;
+}
+.contactinfoeducation h5{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contactinfoeducation h4:nth-child(2){
+color: #fff;
+font-weight: 500;
+
+}
+.contactinfoeducation h4{
+    color: #fff;
+    font-weight: 300;
+    }
+.contactinfolan .percent{
+position: relative;
+width: 100%;
+height: 6px;
+background: #081921;
+display: block;
+margin-top: 5px;
+}
+.contactinfolan .percent div{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+background: #03a9f4;
+
+}
+
+.text1{
+color: #fff;
+font-weight: 300;
+}
+
+.container .rightside {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+    margin-top: 30px;
+    }
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+color: #087275;
+text-transform: uppercase;
+letter-spacing: 1px;
+margin-bottom: 10px;
+margin-left: 30px;
+margin-top: 30px;
+ }
+p{
+    color: #333;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.about .box{
+display: flex ;
+flex-direction: column;
+margin: 20px 0;
+}
+.about .box .year{
+min-width: 150px;
+}
+
+.about .box .year h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600 ;
+    margin-left: 30px;
+    }
+    .about .box .text h4{
+text-transform: uppercase;
+color: #2a7da2;
+font-size: 16px;
+margin-left: 30px;
+}
+ .skill   .box{
+position: relative;
+width: 100%;
+display: grid;
+grid-template-columns: 150px 1fr;
+justify-content: center;
+align-items: center;
+padding-left: 20px ;
+ }
+
+ .skill .box h4{
+text-transform: uppercase;
+color: #848c99;
+font-weight: 500;
+margin-left: 1px;
+ }
+ .skill .box .percent{
+position: relative;
+width: 100%;
+height: 10px;
+background: #f0f0f0 ;
+border-radius: 5px;
+ }
+ .skill .box .percent div{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+background: #03a9f4;
+border-radius: 5px;
+ }
+.inter ul{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+}
+.inter ul li{
+   list-style: none;
+   color: #333;
+   font-weight: 800;
+   margin: 10px 0;
+   margin-left: 30px;
+   font-size: 1em;
+    }
+@media (max-width:1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .inter ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:600px){
+.about .box{
+    flex-direction: column;
+}
+.about .box .year{
+margin-bottom: 5px;
+    min-width: 150px;
+}
+.inter ul{
+    grid-template-columns: repeat(1,1fr);
+}
+ .skill .box{
+   grid-template-columns: repeat(1,1fr);  
+ }
+
+
+
+}
+a{
+
+color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
